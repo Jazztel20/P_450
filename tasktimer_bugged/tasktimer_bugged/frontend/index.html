@@ -1,0 +1,29 @@
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>TaskTiemr (Démo fonctionnelle)</title>
+  <style>
+  :root { --blue:#9aa0a6; --danger:#c1121f; --muted:#6c757d; --bg:#f8fafc; --border:#dee2e6; }
+  *{ box-sizing:border-box } body{ margin:0; background:var(--bg); font-family:system-ui,Segoe UI,Roboto,Arial; color:#212529 }
+  .container{ max-width:900px; margin:0 auto; padding:24px; }
+  .header{ background:var(--blue); color:#fff; padding:16px; border-radius:12px; margin-bottom:16px }
+  .card{ background:#fff; border:1px solid var(--border); border-radius:12px; padding:16px; margin:16px 0 }
+  .toolbar{ margin:8px 0 16px }
+  .btn{ background:var(--blue); color:#fff; border:0; border-radius:8px; padding:10px 14px; cursor:pointer; font-weight:600 }
+  .btn-secondary{ background:#e9ecef; color:#212529; border:1px solid var(--border); border-radius:8px; padding:8px 12px; cursor:pointer }
+  .btn-danger{ background:transparent; color:var(--danger); border:1px solid var(--danger); border-radius:8px; padding:8px 12px; cursor:pointer }
+  .form-row{ display:flex; gap:12px; align-items:center; margin-bottom:8px }
+  .form-row input, .form-row select{ padding:10px 12px; border:1px solid var(--border); border-radius:8px }
+  .list .item{ display:flex; justify-content:space-between; align-items:center; background:#fff; border:1px solid var(--border); border-radius:10px; padding:10px 12px; margin-bottom:10px }
+  .title{ font-weight:600 } .actions{ display:flex; gap:8px } .empty{ color:var(--muted); font-style:italic }
+  #errors{ background:#fff; color:var(--muted); padding:8px 12px; border-radius:8px; margin:8px 0; border:1px solid var(--border) }
+  .desc { margin: 6px 0 0; color:#495057; font-size: 0.95em; }
+  </style>
+</head>
+<body>
+  <div id="app"></div>
+  <script type="module" src="/src/main.js"></script>
+</body>
+</html>
